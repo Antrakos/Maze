@@ -1,0 +1,17 @@
+group 'Maze'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+def apache_poi_version = '3.14'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.apache.poi:poi:$apache_poi_version"
+    compile "org.apache.poi:poi-ooxml:$apache_poi_version"
+    testCompile 'junit:junit:4.11'
+}
